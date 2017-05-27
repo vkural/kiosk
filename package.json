@@ -1,0 +1,22 @@
+{
+  "name": "kiosk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vkural/kiosk.git"
+  },
+  "author": "Volkan Kural",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vkural/kiosk/issues"
+  },
+  "homepage": "https://github.com/vkural/kiosk#readme",
+  "dependencies": {
+    "typescript": "^2.3.3"
+  }
+}
