@@ -53,11 +53,11 @@ abstract class Browser {
     }
 
     public Run() : void {
-        if(this.Options.hideCursor){
+        if(this.options.hideCursor){
             this.hideCursor();
         }
 
-        if(this.Options. disableContextMenu){
+        if(this.options. disableContextMenu){
             this.disableContextMenu();
         }
     }
