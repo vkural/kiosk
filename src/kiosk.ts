@@ -22,9 +22,18 @@ abstract class Browser implements IBrowser {
         }
     }
 
+    public disableContextMenu() : void{
+        // compability : https://www.quirksmode.org/dom/events/contextmenu.html
+        window.oncontextmenu = function () { return false; }
+    }
+
     public Run() : void {
         if(this.Options.hideCursor){
             this.hideCursor();
+        }
+
+        if(this.Options. disableContextMenu){
+            this.disableContextMenu();
         }
     }
 }
