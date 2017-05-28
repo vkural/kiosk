@@ -1,17 +1,27 @@
 interface IBrowser{
-
+    Options : any
 }
 
 abstract class Browser implements IBrowser {
-
+    public Options : any = {
+        hideCursor            : true,
+        disableContextMenu    : true,
+        disableImageDrag      : true,
+        disableTextSelection  : true,
+        disableTouchHighlight : true
+    }
 }
 
 class Chrome  extends Browser { 
-
+    constructor(){
+        super();
+    }
 }
 
 class Firefox extends Browser{
-
+    constructor(){
+        super();
+    }
 }
 
 export class BrowserFactory {
