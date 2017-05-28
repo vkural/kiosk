@@ -42,7 +42,7 @@ export class BrowserFactory {
       linux   : function() { return /linux/i                                          .test(this._av); }
     }        
 
-    static getBrowser(this: BrowserFactory) : any {
+    public static getBrowser(this: BrowserFactory) : any {
         if(BrowserFactory._is.chrome ()){ return new Chrome (); }
         if(BrowserFactory._is.firefox()){ return new Firefox(); }        
     }
