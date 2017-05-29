@@ -1,5 +1,10 @@
 ## Welcome to GitHub Pages
 
+[![GitHub issues](https://img.shields.io/github/issues/vkural/kiosk.svg?style=plastic)](https://github.com/vkural/kiosk/issues)
+https://img.shields.io/github/forks/vkural/kiosk.svg
+https://img.shields.io/github/stars/vkural/kiosk.svg
+https://raw.githubusercontent.com/vkural/kiosk/master/LICENSE
+
 You can use the [editor on GitHub](https://github.com/vkural/kiosk/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
