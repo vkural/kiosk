@@ -53,9 +53,11 @@ abstract class Browser {
     }
 
     public disableImageDrag() : void{
-        // compability : https://www.quirksmode.org/dom/events/contextmenu.html
+        // compability : https://www.w3schools.com/tags/ev_ondragstart.asp
         window.ondragstart  = function () { return false; }
     }
+
+    public abstract disableTextSelection() : void;
 
     public Run() : void {
         if(this.options.hideCursor){
