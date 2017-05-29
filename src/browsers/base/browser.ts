@@ -25,8 +25,7 @@ abstract class Browser {
             hideCursor            : true,
             disableContextMenu    : true,
             disableImageDrag      : true,
-            disableTextSelection  : true,
-            disableTouchHighlight : true
+            disableTextSelection  : true
         }
     }    
     
@@ -74,6 +73,6 @@ abstract class Browser {
 
         if(this.options.disableTextSelection){
             this.disableTextSelection();
-        }                           
+        }                                 
     }
 }
