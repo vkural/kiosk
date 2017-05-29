@@ -3,7 +3,7 @@ class Firefox extends Browser {
         super(userAgent, appVersion, appName, appCodeName);
     }     
 
-    public disableTextSelection() : void{
+    protected disableTextSelection() : void{
         // compatibility : https://quirksmode.org/dom/core/#t14
         let arr = <NodeListOf<HTMLElement>>document.querySelectorAll("*");
         

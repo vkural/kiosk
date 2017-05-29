@@ -37,7 +37,7 @@ abstract class Browser {
         this._appCodeName = appCodeName;
     }   
 
-    public hideCursor() : void {
+    private hideCursor() : void {
         // compatibility : https://quirksmode.org/dom/core/#t14
         let arr = <NodeListOf<HTMLElement>>document.querySelectorAll("*");
         
@@ -47,17 +47,17 @@ abstract class Browser {
         }
     }
 
-    public disableContextMenu() : void{
+    private disableContextMenu() : void{
         // compability : https://www.quirksmode.org/dom/events/contextmenu.html
         window.oncontextmenu = function () { return false; }
     }
 
-    public disableImageDrag() : void{
+    private disableImageDrag() : void{
         // compability : https://www.w3schools.com/tags/ev_ondragstart.asp
         window.ondragstart  = function () { return false; }
     }
 
-    public abstract disableTextSelection() : void;
+    protected abstract disableTextSelection () : void;
 
     public Run() : void {
         if(this.options.hideCursor){
@@ -74,6 +74,6 @@ abstract class Browser {
 
         if(this.options.disableTextSelection){
             this.disableTextSelection();
-        }                
+        }                           
     }
 }
