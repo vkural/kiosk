@@ -52,12 +52,17 @@ abstract class Browser {
         window.oncontextmenu = function () { return false; }
     }
 
+    public disableImageDrag() : void{
+        // compability : https://www.quirksmode.org/dom/events/contextmenu.html
+        window.ondragstart  = function () { return false; }
+    }
+
     public Run() : void {
         if(this.options.hideCursor){
             this.hideCursor();
         }
 
-        if(this.options. disableContextMenu){
+        if(this.options.disableContextMenu){
             this.disableContextMenu();
         }
     }

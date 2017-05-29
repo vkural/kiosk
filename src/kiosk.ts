@@ -13,11 +13,11 @@ class Kiosk {
     }        
 
     public static getBrowser(this: Kiosk) : any {
+        if(Kiosk._is.edge   ()){ return new Edge   (Kiosk._userAgent, Kiosk._appVersion, Kiosk._appName, Kiosk._appCodeName); }          
         if(Kiosk._is.chrome ()){ return new Chrome (Kiosk._userAgent, Kiosk._appVersion, Kiosk._appName, Kiosk._appCodeName); }
         if(Kiosk._is.firefox()){ return new Firefox(Kiosk._userAgent, Kiosk._appVersion, Kiosk._appName, Kiosk._appCodeName); }        
         if(Kiosk._is.safari ()){ return new Safari (Kiosk._userAgent, Kiosk._appVersion, Kiosk._appName, Kiosk._appCodeName); }       
         if(Kiosk._is.opera  ()){ return new Opera  (Kiosk._userAgent, Kiosk._appVersion, Kiosk._appName, Kiosk._appCodeName); }       
-        if(Kiosk._is.edge   ()){ return new Edge   (Kiosk._userAgent, Kiosk._appVersion, Kiosk._appName, Kiosk._appCodeName); }       
         if(Kiosk._is.ie11   ()){ return new IE     (Kiosk._userAgent, Kiosk._appVersion, Kiosk._appName, Kiosk._appCodeName); }       
 
         throw new EvalError('Your browser is not supported.');
