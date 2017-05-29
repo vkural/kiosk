@@ -67,5 +67,13 @@ abstract class Browser {
         if(this.options.disableContextMenu){
             this.disableContextMenu();
         }
+
+        if(this.options.disableImageDrag){
+            this.disableImageDrag();
+        }
+
+        if(this.options.disableTextSelection){
+            this.disableTextSelection();
+        }                
     }
 }
