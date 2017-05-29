@@ -1,9 +1,9 @@
 ## Welcome to GitHub Pages
 
 [![GitHub issues](https://img.shields.io/github/issues/vkural/kiosk.svg?style=plastic)](https://github.com/vkural/kiosk/issues)
-https://img.shields.io/github/forks/vkural/kiosk.svg
-https://img.shields.io/github/stars/vkural/kiosk.svg
-https://raw.githubusercontent.com/vkural/kiosk/master/LICENSE
+[![GitHub forks](https://img.shields.io/github/forks/vkural/kiosk.svg?style=plastic)](https://github.com/vkural/kiosk/network)
+[![GitHub stars](https://img.shields.io/github/stars/vkural/kiosk.svg?style=plastic)](https://github.com/vkural/kiosk/stargazers)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=plastic)](https://raw.githubusercontent.com/vkural/kiosk/master/LICENSE)
 
 You can use the [editor on GitHub](https://github.com/vkural/kiosk/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
