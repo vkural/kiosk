@@ -5,6 +5,13 @@
 [![GitHub stars](https://img.shields.io/github/stars/vkural/kiosk.svg?style=plastic)](https://github.com/vkural/kiosk/stargazers)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=plastic)](https://raw.githubusercontent.com/vkural/kiosk/master/LICENSE)
 
+[![Build Status][build]][link]
+[![semantic-release][semantic-image] ][semantic-url]
+[build]: https://travis-ci.org/vkural/kiosk.svg?branch=master
+[link]: https://travis-ci.org/vkural/kiosk
+[semantic-image]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
+[semantic-url]: https://github.com/semantic-release/semantic-release
+
 You can use the [editor on GitHub](https://github.com/vkural/kiosk/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
