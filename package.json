@@ -4,8 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\"",
-    "publish": "rm -rf dist & tsc -p ./src & uglifyjs dist/browsers/base/*.js dist/browsers/*.js dist/*.js -o dist/kiosk.min.js -m -c;"
+    "clean-dist"  : "rm -rf dist",
+    "clean-temp"  : "rm -rf temp",
+    "create-temp" : "mkdir temp",
+    "create-dist" : "mkdir dist",
+    "build"       : "tsc -p src",
+    "uglifyjs"    : "uglifyjs temp/browsers/base/*.js temp/browsers/*.js temp/*.js -o dist/kiosk.min.js -m -c",
+    "publish"     : "npm run clean-dist & npm run clean-temp & npm run build & npm run create-dist & npm run uglifyjs & npm run clean-temp"
   },
   "repository": {
     "type": "git",

@@ -1,21 +1,22 @@
 language: node_js
 node_js:
   - 'stable'
-sudo: false
-env:
-  - workerCount=3
-matrix:
-  fast_finish: true
 branches:
   only:
   - master
 install:
+  - npm prune
   - npm uninstall typescript
-  - npm install
-  - npm clean
-  - npm build
+  - npm uninstall uglify-js
+  - npm install typescript -g
+  - npm install uglify-js -g
+script:
+  - npm run clean-dist
+  - npm run clean-temp
+  - npm run build
+  - npm run create-dist
+  - npm run uglifyjs
+  - npm run clean-temp
 cache:
   directories:
     - node_modules
-git:
-  depth: 1
