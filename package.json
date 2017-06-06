@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\""
+    "test": "echo \"Error: no test specified\"",
+    "publish" : "rm -rf dist & tsc -p ./src & uglifyjs dist/browsers/base/*.js dist/browsers/*.js dist/*.js -o dist/kiosk.min.js -m -c;"
   },
   "repository": {
     "type": "git",

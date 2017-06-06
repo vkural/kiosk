@@ -12,6 +12,8 @@ branches:
 install:
   - npm uninstall typescript
   - npm install
+  - npm clean
+  - npm build
 cache:
   directories:
     - node_modules
