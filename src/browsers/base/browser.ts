@@ -20,13 +20,11 @@ abstract class Browser {
         return this._appCodeName;
     }             
 
-    public get options() {
-        return {
-            hideCursor            : true,
-            disableContextMenu    : true,
-            disableImageDrag      : true,
-            disableTextSelection  : true
-        }
+    public options : any  = {
+        hideCursor            : true,
+        disableContextMenu    : true,
+        disableImageDrag      : true,
+        disableTextSelection  : true
     }    
     
     constructor(userAgent : string, appVersion : string, appName : string, appCodeName : string){
@@ -58,7 +56,7 @@ abstract class Browser {
 
     protected abstract disableTextSelection () : void;
 
-    public Run() : void {
+    public run() : void {
         if(this.options.hideCursor){
             this.hideCursor();
         }
