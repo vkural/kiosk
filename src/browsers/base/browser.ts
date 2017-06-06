@@ -1,23 +1,23 @@
 abstract class Browser {
-    private _userAgent   : string;
-    private _appVersion  : string;
-    private _appName     : string;
-    private _appCodeName : string;
+    private _ua  : string;
+    private _av  : string;
+    private _an  : string;
+    private _acn : string;
 
-    public get userAgent() {
-        return this._userAgent;
+    public get getUserAgent() {
+        return this._ua;
     }
 
-    public get appVersion() {
-        return this._appVersion;
+    public get getAppVersion() {
+        return this._av;
     }         
 
-    public get appName() {
-        return this._appName;
+    public get getAppName() {
+        return this._an;
     }    
 
-    public get appCodeName() {
-        return this._appCodeName;
+    public get getAppCodeName() {
+        return this._acn;
     }             
 
     public options : any  = {
@@ -27,11 +27,11 @@ abstract class Browser {
         disableTextSelection  : true
     }    
     
-    constructor(userAgent : string, appVersion : string, appName : string, appCodeName : string){
-        this._userAgent   = userAgent;
-        this._appVersion  = appVersion;
-        this._appName     = appName;
-        this._appCodeName = appCodeName;
+    constructor(ua : string, av : string, an : string, acn : string){
+        this._ua  = ua;
+        this._av  = av;
+        this._an  = an;
+        this._acn = acn;
     }   
 
     private hideCursor() : void {
