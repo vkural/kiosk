@@ -2,7 +2,7 @@
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/vkural/kiosk/master/LICENSE)
 [![Build Status](https://img.shields.io/travis/vkural/kiosk.svg?branch=master)](https://travis-ci.org/vkural/kiosk)
-[![GitHub issues](https://img.shields.io/github/issues/vkural/kiosk.svg)](https://github.com/vkural/kiosk/issues) [![](https://img.shields.io/github/issues-closed-raw/vkural/kiosk.svg)]()
+[![GitHub issues](https://img.shields.io/github/issues/vkural/kiosk.svg)](https://github.com/vkural/kiosk/issues) [![](https://img.shields.io/github/issues-closed-raw/vkural/kiosk.svg)](https://github.com/vkural/kiosk/issues?q=is%3Aissue+is%3Aclosed)
 
 
 You can use the [editor on GitHub](https://github.com/vkural/kiosk/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
